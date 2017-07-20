@@ -4,7 +4,7 @@
  Author:         George Roubis (georgeroubis@gmail.com)
 
  Script Function:
-	A simple tool to deploy email campaings.
+	A simple tool to deploy email campaigns.
 
 #ce ----------------------------------------------------------------------------
 
@@ -131,7 +131,7 @@
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 	;Create the GUI
-	$CampaignerGUI = GUICreate ("Campaigner v.1.6", 990 , 450)
+	$CampaignerGUI = GUICreate ("Campaigner", 990 , 450)
 
 	;Set status to visible
 	GUISetState(@SW_SHOW)
