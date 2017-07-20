@@ -1,0 +1,18 @@
+                **********************************************
+                *** Console Telnet version 2.0  Known Bugs ***
+                **********************************************
+
+
+Wrap_Line = 0   don't work very well. It works with elvis or talk on linux
+                but messes up bash at last line
+                You can't really change this options from telnet> prompt
+                It is only for the start up.
+
+Enable_Mouse=1  Causes the display to slow in fullscreen mode, since the
+                mouse has to be erased and then drawn again for every
+                screen write.
+
+Term_Width or Term_Height != -1 or Wide_Enable=1
+                Specifying any of these can cause display problems if
+                the font size is not set to auto (Win95/98).
+

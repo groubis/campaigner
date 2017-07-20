@@ -1,0 +1,44 @@
+Moving from beta5 to beta6
+
+There are a couple of differences between beta5 and beta6 that you might
+want to be aware of.
+
+First of all is the way that beta6 handles blink and underline.  A Windows
+console can't display these under normal circumstances.  While beta5 tried
+to display them with high intensity backgrounds, beta6 tries to display
+them with colors.  Unfortunately, the emulation isn't complete (hopefully
+it will be in beta7).  So, if you want to use colors for blink and underline,
+put the following lines in telnet.ini:
+
+[Colors]
+blink_fg = 2
+underline_fg = 3
+ulblink_fg = 1
+
+Otherwise, set the values to -1 to disable colors (and telnet will try to
+use high intensity backgrounds for blink and underline).
+
+Also, beta6 now has mouse support!  It is enabled by default, but if you
+like to run Console Telnet in full-screen, you might want to disable it
+since it can slow some things down.  To do this, simply put
+enable_mouse=0 in the [Mouse] section of telnet.ini.
+
+If you want to be able to display ASCII characters below 32, you can now do
+that, though you will sacrifice a little bit of speed.  To enable this
+feature, put fast_write=0 in the [Terminal] section of telnet.ini.  Or, to
+to ensure that output is as fast as it can be, make sure that fast_write
+is not set to 0.
+
+Finally, there are some changes to the scrollback mode.  You can change the
+default mode for scrollback with Scroll_Mode (in the [Scrollback] section
+of telnet.ini).  You can then change the scroll mode on-the-fly with the
+tab key while you are in scrollback mode.  See options.txt for more
+details.
+
+That's essentially the sum of the most important new features in console
+telnet.  If you have any problems, or questions, please email the mailing
+list, telnet-win32@argeas.cs-net.gr, or me at pbranna@clemson.edu.
+Console telnet is a group effort, and thanks goes to everyone who's helped
+(and to everyone who's posted bug reports)!  Keep up the good work!
+
+Paul Brannan
