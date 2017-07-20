@@ -25,4 +25,19 @@ youremail@corporateemail.com;Test Email 3;George;Roubis
 ```
 
 ### The html template
-All elements 
+The html template is the body of your email. To add dynamic data on it, simply add the column titles like that:
+
+```
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Test</title>
+	</head>
+
+	<body>
+		<div style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">
+			Hello <span style="font-weight:bold;color:#F76F76">[{Col1}] [{Col2}]</span><br />
+		</div>
+	</body>
+</html>
+```
