@@ -13,6 +13,7 @@ Each row of the csv file corresponds to one email.
 Two columns are mandatory:
 * ToAddress (this column must contain the email address of each recipient)
 * Subject (this column must contain the subject of the email)
+
 All the other columns can contain any dynamic information you want to add in the body of the sent email.
 All column titles must be unique!
 
