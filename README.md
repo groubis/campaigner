@@ -25,7 +25,7 @@ youremail@corporateemail.com;Test Email 3;George;Roubis
 ```
 
 ### The html template
-The html template is the body of your email. To add dynamic data on it, simply add the column titles like that:
+The html template is the body of your email. To add dynamic data on it, simply add the column titles you previously declared in your csv file like that:
 
 ```
 <html>
