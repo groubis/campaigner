@@ -1,7 +1,9 @@
 # Campaigner
 A simple tool for running your email campaigns
 
-## How it works
-You will need two files to run your campaign:
+## What you will need
+To use the tool you will need the following:
 * An html template
 * A csv file
+* AutoIT
+* Your email server configuration
