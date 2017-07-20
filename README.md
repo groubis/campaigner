@@ -1,5 +1,5 @@
 # Campaigner
-A simple tool for running your email campaigns
+A simple tool for launching your email campaigns.
 
 ## What you will need
 To use the tool you will need the following:
@@ -69,3 +69,20 @@ the output of the above will be:
 ```
 Hello John Doe
 ```
+
+## Usage
+1. Run the application
+2. Fill in your email configuration
+3. Fill in any required or additional content configuration
+4. Select your data file (csv file)
+5. Select your template file (html file)
+6. Click check
+7. Click Launch to launch your campaign, or Unlock to review your settings
+
+## Credits
+The following tools have been used:
+
+[Console Telnet for Win32](http://consoletelnet.sourceforge.net/)
+[AutoIT SMTP Mailer by Jos](https://www.autoitscript.com/forum/topic/23860-smtp-mailer-that-supports-html-and-attachments/)
+
+
