@@ -15,8 +15,14 @@ Two columns are mandatory:
 * Subject (this column must contain the subject of the email)
 
 All the other columns can contain any dynamic information you want to add in the body of the sent email.
-
 All column titles must be unique!
+This is an example of a very basic csv file contents:
+
+```
+ToAddress;Subject;Col1;Col2
+youremail@email.com;Test Email 1;John;Doe
+youremail@corporateemail.com;Test Email 3;George;Roubis
+```
 
 ### The html template
 All elements 
