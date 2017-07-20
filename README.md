@@ -3,10 +3,33 @@ A simple tool for running your email campaigns
 
 ## What you will need
 To use the tool you will need the following:
-* A csv file (semicolon delimited)
-* An html template
 * AutoIT
 * Your email server configuration
+* A csv file (semicolon delimited)
+* An html template
+
+### AutoIT
+AutoIT can be downloaded from [here](https://www.autoitscript.com/site/).
+You will need it to compile the Campaigner.au3 to a windows executable.
+
+### Email server configuration
+You will need the following information from your email provider:
+* The email server hostname or ip address
+* The email server port
+* If SSL is supported from your email provider
+* Your email account username
+* Your email account password
+
+All the above can be entered in the campaigner.ini file in MailServer section:
+
+```
+[MailServer]
+MailServer=your.smtp.com
+MailPort=465
+MailSSL=1
+AccountUsername=your@email.com
+AccountPassword=y0uRp@$$w0rd
+```
 
 ### The csv file
 Each row of the csv file corresponds to one email.
@@ -39,4 +62,10 @@ Hello <span style="font-weight:bold;color:#F76F76">[{Col1}] [{Col2}]</span><br /
 </div>
 </body>
 </html>
+```
+
+the output of the above will be:
+
+```
+Hello John Doe
 ```
