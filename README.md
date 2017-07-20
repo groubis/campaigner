@@ -15,6 +15,7 @@ Two columns are mandatory:
 * Subject (this column must contain the subject of the email)
 
 All the other columns can contain any dynamic information you want to add in the body of the sent email.
+
 All column titles must be unique!
 
 ### The html template
